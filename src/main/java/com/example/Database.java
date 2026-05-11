@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class Database {
-    private static final String url = "jdbc:sqlite:test.db";
+    public static final String url = "jdbc:sqlite:test.db";
 
     public static void makeTables() {
         try (Connection conn = DriverManager.getConnection(url)) {
